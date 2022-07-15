@@ -140,3 +140,7 @@ h6 {
   font-weight: 700;
   border-radius: 8px;
 }
+
+.card-btn:hover {
+  cursor: pointer;
+}
