@@ -73,13 +73,6 @@ h6 {
 /* Layout */
 .card {}
 
-.card_image {
-  width: 100%;
-  background: url(./images/image-product-mobile.jpg);
-  background-size: cover;
-  height: 250px;
-}
-
 .card_image,
 .card_image img {
   border-top-left-radius: 10px;
@@ -151,4 +144,38 @@ h6 {
 }
 
 /* Estilização Desktop */
-@media (min-width: 720px) {}
+@media (min-width: 720px) {
+  body {
+    padding: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .card {
+    width: 40%;
+    display: flex;
+  }
+
+  .card>* {
+    flex-basis: 50%;
+  }
+
+  .card_image {
+    outline: 1px solid red;
+  }
+
+  .card_image picture {
+    height: 100%;
+  }
+
+  .card_image picture>img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .card_content {
+    padding: 1.5rem;
+  }
+}
