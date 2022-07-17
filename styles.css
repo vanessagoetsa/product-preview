@@ -76,7 +76,8 @@ h6 {
 .card_image,
 .card_image img {
   border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+ border-bottom-left-radius: 10px;
+
 }
 
 .card_content {
@@ -162,9 +163,6 @@ h6 {
     flex-basis: 50%;
   }
 
-  .card_image {
-    outline: 1px solid red;
-  }
 
   .card_image picture {
     height: 100%;
