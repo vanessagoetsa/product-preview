@@ -172,6 +172,7 @@ h6 {
     /* desfaz a propriedade */
     border-top-right-radius: unset;
     border-bottom-left-radius: 10px;
+
   }
 
   .card_image picture>img {
