@@ -76,16 +76,14 @@ h6 {
 .card_image,
 .card_image img {
   border-top-left-radius: 10px;
- border-bottom-left-radius: 10px;
-
+  border-top-right-radius: 10px;
 }
 
 .card_content {
   background-color: var(--white);
   padding: 1rem;
-  border-bottom-left-radius:10px;  
-  border-bottom-right-radius: ;
-
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .card-subtitle {
@@ -164,11 +162,16 @@ h6 {
     flex-basis: 50%;
   }
 
-
+  /* Faz a imagem ocupar toda a altura da card */
   .card_image picture {
     height: 100%;
-    border-top-right-radius: 10px;
-border-bottom-right-radius: 10px;
+  }
+
+  .card_image img {
+    border-top-left-radius: 10px;
+    /* desfaz a propriedade */
+    border-top-right-radius: unset;
+    border-bottom-left-radius: 10px;
   }
 
   .card_image picture>img {
@@ -179,7 +182,7 @@ border-bottom-right-radius: 10px;
   .card_content {
     padding: 1.5rem;
     border-bottom-left-radius: 0;
-    border-bottom-right-radius:10px;
-    border-top-right-radius:10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
   }
 }
