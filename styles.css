@@ -167,6 +167,8 @@ h6 {
 
   .card_image picture {
     height: 100%;
+    border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
   }
 
   .card_image picture>img {
